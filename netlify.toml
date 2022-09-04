@@ -1,0 +1,5 @@
+﻿[[redirects]]
+  from = "https://docs-etonern.netlify.app"
+  to = "https://docs.msk.ilnk.info"
+  status = 301
+  force = true
