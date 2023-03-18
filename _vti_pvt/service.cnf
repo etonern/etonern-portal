@@ -19,6 +19,6 @@ vti_navbuttonnextlabel:SR|進む
 vti_approvallevels:VR|承認済み 却下 レビューの承認待ち
 vti_showhiddenpages:IR|1
 vti_navbuttonhomelabel:SR|ホーム
-vti_dependenciesood:IR|0
+vti_dependenciesood:IR|1
 vti_featurelist:VX|vti_ACAll vti_ServiceMarkUrlDirBrowse vti_ServiceMarkUrlDirExec vti_ServiceMarkUrlDirScript vti_ACIPAddresses vti_ServerEmailTransport vti_ServerIndexServer vti_ServerASP vti_ServerCollab vti_ServerWebParts vti_RulesScript vti_TimedDocEvents
 vti_categories:VR|出張 経費報告 ビジネス 競合製品 ゴール/目標 アイデア その他 準備中 VIP 進行中 プラン スケジュール
