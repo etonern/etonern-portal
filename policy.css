@@ -1,6 +1,6 @@
 .container {
-    background-color: #521640;
-    border: 1px solid #cf87af;
+    background-color: #292929;
+    border: 1px solid #292929;
     border-radius: 5px;
     margin: 20px auto;
     max-width: 850px;
@@ -10,7 +10,7 @@
 body {
 	font-family: Arial, sans-serif;
 	background-color: #000000;
-    color: #ff9bcd;
+    color: #fff;
 	margin: 0;
 	padding: 0;
 }
