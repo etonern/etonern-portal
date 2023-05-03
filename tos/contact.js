@@ -1,4 +1,4 @@
-const text = 'support@etonemail.ilnk.info';
+const text = 'support@etn.icu';
 let index = 0;
 
 function type() {
