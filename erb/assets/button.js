@@ -43,3 +43,12 @@ function sendtodiscord504() {
     xmlhttp.send(myJSONStr504);
     window.alert("ご協力ありがとうございます！(504)");
 }
+function sendtodiscordosnabruck() {
+    let xmlhttp = new XMLHttpRequest();
+    let webhook_url = 'https://discord.com/api/webhooks/1188622184185331756/JJph8c4UHY8sLjxFiZIdCop3RxC6vFG-6uLvwzoabYIYVaTlJtb49AJqjAx0VEfa7-QM';
+    let myJSONStrDeutschland = '{"content":"https://tenor.com/view/doge-gif-21895742"}';
+    xmlhttp.open('POST', webhook_url, false);
+    xmlhttp.setRequestHeader('Content-Type', 'application/json');
+    xmlhttp.send(myJSONStrDeutschland);
+    window.alert("押すなっていったよね？");
+}
