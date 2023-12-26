@@ -36,8 +36,15 @@ function sendtodiscord504() {
     xmlhttp.send(myJSONStr504);
     window.alert("ご協力ありがとうございます！(504)");
 };
+function sendtodiscordacdn() {
+    let myJSONStracdn = '{"content":"<@794846685113221131><@804270661693997116> Access Deniedボタンが押されました。"}';
+    xmlhttp.open('POST', webhook_err, false);
+    xmlhttp.setRequestHeader('Content-Type', 'application/json');
+    xmlhttp.send(myJSONStracdn);
+    window.alert("ご協力ありがとうございます！(ACDN)");
+};
 function sendtodiscordosnabruck() {
-    let myJSONStrDeutschland = '{"content":"https://tenor.com/view/doge-gif-21895742"}';
+    let myJSONStrDeutschland = '{"content":"押すなっていったじゃない！！！この変態！！by 星府牡丹"}';
     xmlhttp.open('POST', webhook_gnrl, false);
     xmlhttp.setRequestHeader('Content-Type', 'application/json');
     xmlhttp.send(myJSONStrDeutschland);
