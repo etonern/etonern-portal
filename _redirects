@@ -1,7 +1,7 @@
 # http and https need separate rules if you don’t force_ssl!
-http://docs.msk.ilnk.info/* https://etn.icu/:splat 301!
-https://docs.msk.ilnk.info/* https://etn.icu/:splat 301!
-http://www.etn.icu/* https://etn.icu/:splat 301!
-https://www.etn.icu/* https://etn.icu/:splat 301!
-https://etn.icu/mc/* https://xn--80aa0aehiwrr.xn--e1apcp8c.xn--h1adgh.xn--p1acf/:splat 301!
+http://docs.msk.ilnk.info/* https://etnfed.ru/:splat 301!
+https://docs.msk.ilnk.info/* https://etnfed.ru/:splat 301!
+http://www.etnfed.ru/* https://etnfed.ru/:splat 301!
+https://www.etnfed.ru/* https://etnfed.ru/:splat 301!
+https://etnfed.ru/mc/* https://xn--80aa0aehiwrr.xn--e1apcp8c.xn--h1adgh.xn--p1acf/:splat 301!
 /502/* /erb/:splat 301!
