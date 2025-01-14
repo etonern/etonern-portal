@@ -2,67 +2,65 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<meta content="ja" http-equiv="Content-Language" />
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>Etonern Federation Web Portal</title>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HPGYFRBNM2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta content="ja" http-equiv="Content-Language" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etonern Federation Web Portal</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HPGYFRBNM2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'G-HPGYFRBNM2');
-</script>
-<script type="text/javascript">
-<!--
-function FP_preloadImgs() {//v1.0
- var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
- for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
-}
+        gtag('config', 'G-HPGYFRBNM2');
+    </script>
+    <script type="text/javascript">
+        <!--
+        function FP_preloadImgs() {//v1.0
+            var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+            for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+        }
 
-function FP_swapImg() {//v1.0
- var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
- n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
- elm.$src=elm.src; elm.src=args[n+1]; } }
-}
+        function FP_swapImg() {//v1.0
+            var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+                                                                                  n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+                elm.$src=elm.src; elm.src=args[n+1]; } }
+        }
 
-function FP_getObjectByID(id,o) {//v1.0
- var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
- else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
- if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
- for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
- f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
- for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
- return null;
-}
-// -->
-</script>
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="etonern" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting 🎉" data-color="#F471FF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=M+PLUS+1:wght@200;300&display=swap');
+        function FP_getObjectByID(id,o) {//v1.0
+            var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+            else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+            if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+                for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+            f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+                for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+            return null;
+        }
+        // -->
+    </script>
 
-  h1 {
-    font-family: 'Jost', sans-serif;
-  }
-
-  p{
-    font-family: 'M PLUS 1', sans-serif;
-  }
-</style>
+    <link rel="stylesheet" type="text/css" href="./TopPage/styles.css" />
 </head>
 
-<body onload="FP_preloadImgs(/*url*/'button3.gif',/*url*/'button4.gif')">
+<body onload="FP_preloadImgs('button3.gif', 'button4.gif')">
 
 <h1>Welcome to Etonern Federation Web Portal!!</h1>
 <p>あなたは<script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=89500822"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=89500822" /></noscript>人目のお客様です。</p>
 <p><a href="main">
-<img id="img1" alt="入館" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'button4.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'button2.gif')" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'button3.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'button3.gif')" src="button2.gif" style="border: 0" width="100" /><!-- MSComment="ibutton" fp-style="fp-btn: Embossed Capsule 1; fp-transparent: 1" fp-title="入館" --></a></p>
+    <img id="img1" alt="入館" height="20" onmousedown="FP_swapImg(1,0,'img1','./TopPage/button4.gif')" onmouseout="FP_swapImg(0,0,'img1','./TopPage/button2.gif')" onmouseover="FP_swapImg(1,0,'img1','./TopPage/button3.gif')" onmouseup="FP_swapImg(0,0,'img1','./TopPage/button3.gif')" src="./TopPage/button2.gif" style="border: 0" width="100" />
+</a></p>
+
 <p><iframe title=":wowowyeiyeiye:" src="https://fedimovie.com/videos/embed/038c715d-a13d-4379-a26c-e5727a292af6?autoplay=1&amp;warningTitle=0&amp;p2p=0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="392" height="221" frameborder="0"></iframe></p>
-<p>キリ番報告は<a href="https://privacy-is-heavy.cf/?text=@morotesovtannu@msk.ilnk.info えとねるんDocsでキリ番取りました！">こちらへ</a>
+
+<p>キリ番報告は<a href="https://msk.ilnk.info">えとねるんで！</a></p>
 <br>
-<a href="https://www.gogetssl.com" rel="nofollow" title="GoGetSSL Site Seal Logo" ><div id="gogetssl-animated-seal" style="width:180px; height:58px;"></div></a> <script src="https://gogetssl-cdn.s3.eu-central-1.amazonaws.com/site-seals/gogetssl-seal.js"></script>
-<br>
+
+<footer>
+    <a href="https://letsencrypt.org" rel="nofollow" title="Let's Encrypt">
+        <div id="letsencrypt"><p>Let's Encrypt</p></div>
+</footer>
+
 </body>
 
 </html>
