@@ -56,6 +56,24 @@
         </div>
     </footer>
 
+    <button id="toggle-dark-mode" class="floating-button">切換至深色模式</button>
 
+    <script>
+        document.getElementById('toggle-dark-mode').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            
+            // 保存された設定をローカルストレージに保存
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // ページ読み込み時にローカルストレージからテーマを復元
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+    </script>
 </body>
 </html>

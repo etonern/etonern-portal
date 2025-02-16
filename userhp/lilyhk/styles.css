@@ -72,6 +72,38 @@ h3 {
     font-weight: 700; /* 使用粗体 */
 }
 
+/* 深色模式样式 */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background-color: #222;
+    color: #e0e0e0;
+}
+
+body.dark-mode .poem-bar {
+    background-color: #444;
+    color: #e0e0e0;
+}
+
+body.dark-mode section {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+body.dark-mode section h2,
+body.dark-mode h3 {
+    color: #ff6666; /* 更亮的红色，提高对比度 */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* 添加阴影以增强可读性 */
+}
+
+body.dark-mode ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
 /* プロフィールセクション */
 .profile {
     display: flex;
@@ -83,12 +115,21 @@ h3 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 影 */
 }
 
+body.dark-mode .profile {
+    background: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 深色模式下的影 */
+}
+
 .profile-image {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 影 */
+}
+
+body.dark-mode .profile-image {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 深色模式下的影 */
 }
 
 .profile-info {
@@ -108,9 +149,18 @@ h3 {
     font-weight: 700; /* 使用粗体 */
 }
 
+body.dark-mode .name-chinese {
+    color: #ff6666; /* 在深色模式下使用更亮的红色 */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* 添加阴影以增强可读性 */
+}
+
 .name-english {
     font-size: 1em;
     color: #666;
+}
+
+body.dark-mode .name-english {
+    color: #999; /* 深色模式下的灰色 */
 }
 
 /* フッター */
@@ -120,6 +170,12 @@ footer {
     background: #cc0000;
     color: white;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2); /* 影 */
+}
+
+body.dark-mode footer {
+    background: #444;
+    color: #e0e0e0;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5); /* 深色模式下的影 */
 }
 
 footer p {
@@ -146,7 +202,30 @@ footer p {
     font-weight: bold;
 }
 
+body.dark-mode #tongyi {
+    color: #ffd700; /* 深色模式下的金色 */
+}
+
 #tongyi:hover {
     text-decoration: underline;
 }
 
+/* 浮動ボタンのスタイル */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .floating-button {
+    background-color: #b30000;
+}
