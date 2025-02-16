@@ -1,23 +1,42 @@
+/* 基本スタイル */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Microsoft JhengHei", Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fff5e6; /* 浅橙黄色，带有一点温暖的感觉 */
+    color: #333;
+    scroll-behavior: smooth; /* スムーズスクロール */
 }
 
+/* ヘッダー */
 header {
+    position: relative;
     background: url('kowloontong.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 100px 20px;
+    background-size: cover;
+    box-shadow: inset 0 -10px 10px rgba(0, 0, 0, 0.3); /* 内部影 */
 }
 
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* ナビゲーションバー */
 nav ul {
     list-style-type: none;
     padding: 0;
-    background: #333;
+    background: #cc0000; /* 紅色，象征喜庆和热情 */
     overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* 影 */
 }
 
 nav ul li {
@@ -30,27 +49,26 @@ nav ul li a {
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #111;
+    background-color: #990000; /* 深红色，鼠标悬停时颜色加深 */
 }
 
+/* セクション */
 section {
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 800px;
     background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* 影 */
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
-    color: white;
-}
-
-footer a {
-    color:aqua;
+section h2 {
+    margin-top: 0;
+    color: #cc0000; /* 标题使用红色 */
 }
 
 ul {
@@ -60,4 +78,68 @@ ul {
 
 h3 {
     margin-top: 20px;
+    font-size: 1.2em;
+    color: #cc0000; /* 子标题也使用红色 */
+}
+
+/* プロフィールセクション */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 影 */
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 影 */
+}
+
+.profile-info {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.profile-name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.name-chinese {
+    font-size: 2em;
+    color: #cc0000;
+}
+
+.name-english {
+    font-size: 1em;
+    color: #666;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #cc0000;
+    color: white;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2); /* 影 */
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#tongyi {
+    color: gold; /* 使用金色来强调链接 */
+    font-weight: bold;
+}
+
+#tongyi:hover {
+    text-decoration: underline;
 }

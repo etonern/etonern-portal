@@ -13,22 +13,31 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#about">關於我</a></li>
-            <li><a href="#recommendations">我的推薦</a></li>
-            <li><a href="#contact">聯繫我</a></li>
+            <li><a href="#about" class="scroll-link">關於我</a></li>
+            <li><a href="#recommendations" class="scroll-link">我的推薦</a></li>
+            <li><a href="#contact" class="scroll-link">聯繫我</a></li>
         </ul>
     </nav>
     <section id="about">
         <h2>關於我</h2>
-        <p>Misskist & Fedizen.<br>請來香港旅遊。沙田和青衣的飯店很便宜。</p>
-        <h3>我的角色與職務</h3>
-        <ul>
-            <li>Ochaskey Moderator</li>
-            <li>Etonern Administrator</li>
-            <li>Nekomiya.net Dev</li>
-            <li>RuMisukiy VP</li>
-            <li>Reliwave P.S. Member</li>
-        </ul>
+        <div class="profile">
+            <img src="myicon.png" alt="陳麗華的照片" class="profile-image">
+            <div class="profile-info">
+                <div class="profile-name">
+                    <span class="name-chinese">陳麗華</span>
+                    <span class="name-english">Lily Chen Lai Waa</span>
+                </div>
+                <p>Misskist & Fedizen.<br>請來香港旅遊。沙田和青衣的飯店很便宜。</p>
+                <h3>我的角色與職務</h3>
+                <ul>
+                    <li>Ochaskey Moderator</li>
+                    <li>Etonern Administrator</li>
+                    <li>Nekomiya.net Dev</li>
+                    <li>RuMisukiy VP</li>
+                    <li>Reliwave P.S. Member</li>
+                </ul>
+            </div>
+        </div>
     </section>
     <section id="recommendations">
         <h2>我的推薦</h2>
@@ -44,5 +53,17 @@
         <p>此页面是使用<a id="tongyi" href="https://tongyi.aliyun.com/">通义</a>创建的。</p>
         <p>This page was created using <a id="tongyi" href="https://tongyi.aliyun.com/">Tongyi</a>.</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.scroll-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
