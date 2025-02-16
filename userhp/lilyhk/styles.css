@@ -134,3 +134,18 @@ footer p {
 #tongyi:hover {
     text-decoration: underline;
 }
+
+.language-switcher {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.language-switcher a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.language-switcher a:hover {
+    text-decoration: underline;
+}
