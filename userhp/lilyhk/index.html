@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>陳麗華 Lily Chen</title>
+    <!-- Google Fonts: Noto Serif HK, Noto Sans HK, and LXGW WenKai TC Light -->
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@300&family=Noto+Sans+HK:wght@100..900&family=Noto+Serif+HK:wght@200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,13 +13,9 @@
         <h1>歡迎來到我的個人空間</h1>
         <p>我是陳麗華(Lily Chen)，來自遼寧省丹東市，現居香港・茘枝角。</p>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#about" class="scroll-link">關於我</a></li>
-            <li><a href="#recommendations" class="scroll-link">我的推薦</a></li>
-            <li><a href="#contact" class="scroll-link">聯繫我</a></li>
-        </ul>
-    </nav>
+    <div class="poem-bar">
+        國破山河在，城春草木深。
+    </div>
     <section id="about">
         <h2>關於我</h2>
         <div class="profile">
@@ -58,7 +56,6 @@
         document.querySelectorAll('.scroll-link').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
