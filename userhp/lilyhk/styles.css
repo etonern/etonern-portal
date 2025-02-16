@@ -99,6 +99,15 @@ body.dark-mode h3 {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* 添加阴影以增强可读性 */
 }
 
+body.dark-mode #banner {
+    background: #333;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* 深色模式下的影 */
+}
+
+body.dark-mode .banner-content p {
+    color: #e0e0e0; /* 深色模式下的文字颜色 */
+}
+
 body.dark-mode ul {
     list-style-type: disc;
     padding-left: 20px;
@@ -161,6 +170,27 @@ body.dark-mode .name-chinese {
 
 body.dark-mode .name-english {
     color: #999; /* 深色模式下的灰色 */
+}
+
+/* 橫幅的基本樣式 */
+#banner {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* 影 */
+}
+
+.banner-content img {
+    border: 1px solid #ccc; /* 添加邊框以增強可視性 */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 1em;
+    color: #333;
 }
 
 /* フッター */
