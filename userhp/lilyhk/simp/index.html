@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>陈丽华 Lily Chen</title>
-    <!-- Google Fonts: Noto Serif SC, Noto Sans SC, and LXGW WenKai TC Light -->
-    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@300&family=Noto+Sans+SC:wght@100..900&family=Noto+Serif+SC:wght@200..900&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Noto Serif HK, Noto Sans HK, and LXGW WenKai TC Light -->
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@300&family=Noto+Sans+HK:wght@100..900&family=Noto+Serif+HK:wght@200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+    <!-- 加载画面 -->
+    <div id="loading-screen" class="full-screen-loading">
+        <div class="spinner"></div>
+        <p>加载中...</p>
+    </div>
+
+    <!-- 深色模式切换按钮 -->
+    <button id="toggle-dark-mode" class="floating-button">切换深色模式</button>
+
+    <!-- 主要内容 -->
     <header>
         <h1>欢迎来到我的个人空间</h1>
-        <p>我是陈丽华(Lily Chen)，来自辽宁省丹东市，现居香港・荔枝角。</p>
+        <p>我是陈丽华（Lily Chen），来自辽宁省丹东市，目前居住在香港荔枝角。</p>
     </header>
     <div class="poem-bar">
         国破山河在，城春草木深。
@@ -19,13 +29,13 @@
     <section id="about">
         <h2>关于我</h2>
         <div class="profile">
-            <img src="../myicon.png" alt="陈丽华的照片" class="profile-image">
+            <img src="../myicon.png" alt="陈丽华的照片" class="profile-image clickable-icon" id="profileImage">
             <div class="profile-info">
                 <div class="profile-name">
                     <span class="name-chinese">陈丽华</span>
-                    <span class="name-english">Lily Chen Lai Waa</span>
+                    <span class="name-english">Lily Chen Lai Wah</span>
                 </div>
-                <p>Misskist & Fedizen.<br>请来香港旅游。沙田和青衣的饭店很便宜。</p>
+                <p>Misskist & Fedizen.<br>请来香港旅游。沙田和青衣的酒店很便宜。</p>
                 <h3>我的角色与职务</h3>
                 <ul>
                     <li>Ochaskey Moderator</li>
@@ -43,47 +53,36 @@
         <br>最喜欢的邨: 彩虹邨 Choi Hung Estate</p>
     </section>
     <section id="contact">
-        <h2>联系我/Contact</h2>
-        <p>Misskey: <a href="https://ussr.rumiserver.com/@pochta_rossii" rel="me">@pochta_rossii@ussr.rumiserver.com</a><br>Gotosocial: <a href="https://sevenstar.etnfed.ru/@lily_hk" rel="me">@lily_hk@sevenstar.etnfed.ru</a><br>E-mail: <a href="mailto:lily.hkmliktea@etnfed.ru" rel="me">lily.hkmilktea@etnfed.ru</a></p>
+        <h2>联系我</h2>
+        <p>Misskey: <a href="https://ussr.rumiserver.com/@pochta_rossii" rel="me">@pochta_rossii@ussr.rumiserver.com</a><br>Gotosocial: <a href="https://sevenstar.etnfed.ru/@lily_hk" rel="me">@lily_hk@sevenstar.etnfed.ru</a><br>Email: <a href="mailto:lily.hkmliktea@etnfed.ru" rel="me">lily.hkmilktea@etnfed.ru</a></p>
     </section>
-    <!-- 显示横幅的区块 -->
+    <!-- 显示横幅的区段 -->
     <section id="banner">
-    <div class="banner-content">
-        <h2>Banner</h2>
-        <a href="https://etnfed.ru/userhp/lilyhk" target="_blank">
-            <img src="../images/banner.jpg" alt="横幅图片" style="max-width: 100%; height: auto;">
-        </a>
-        <p>请将此横幅保存并使用。链接指向：<a href="https://etnfed.ru/userhp/lilyhk" target="_blank">https://etnfed.ru/userhp/lilyhk</a>。</p>
-    </div>
+        <div class="banner-content">
+            <h2>Banner</h2>
+            <a href="https://etnfed.ru/userhp/lilyhk" target="_blank">
+                <img src="../images/banner.jpg" alt="横幅图片" style="max-width: 100%; height: auto;">
+            </a>
+            <p>请保存并使用此横幅。链接指向：<a href="https://etnfed.ru/userhp/lilyhk" target="_blank">https://etnfed.ru/userhp/lilyhk</a>。</p>
+        </div>
+    </section>
+    <section id="link-simplified-chinese">
+        <div class="link-exchange">
+            <h2>相互链接</h2>
+            <a href="https://rumi-room.net" target="_blank">
+                <img src="https://rumi-room.net/Asset/rumisan_room/BANNR.png" alt="相互链接横幅" style="max-width: 100%; height: auto;">
+            </a>
+        </div>
     </section>
     <footer>
-        <p>© 2025 陈丽华 (Lily Chen) 版权所有</p>
-        <p>此页面是使用<a id="tongyi" href="https://tongyi.aliyun.com/">通义</a>创建的。</p>
+        <p>© 2025 陈丽华 版权所有</p>
+        <p>此页面是使用<a id="tongyi" href="https://tongyi.ai/">通义</a>创建的。</p>
         <div class="language-switcher">
             <a href="../index.html">繁體中文</a> | 
             <a href="../en/index.html">English</a> | 
             <a href="../ja/index.html">日本語</a>
         </div>
     </footer>
-    
-    <button id="toggle-dark-mode" class="floating-button">切換至深色模式</button>
-
-    <script>
-        document.getElementById('toggle-dark-mode').addEventListener('click', function() {
-            document.body.classList.toggle('dark-mode');
-            
-            // 保存された設定をローカルストレージに保存
-            if (document.body.classList.contains('dark-mode')) {
-                localStorage.setItem('theme', 'dark');
-            } else {
-                localStorage.setItem('theme', 'light');
-            }
-        });
-
-        // ページ読み込み時にローカルストレージからテーマを復元
-        if (localStorage.getItem('theme') === 'dark') {
-            document.body.classList.add('dark-mode');
-        }
-    </script>
+    <script src="../scripts.js"></script>
 </body>
 </html>
